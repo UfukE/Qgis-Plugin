@@ -205,7 +205,7 @@ class GetWeatherData:
         self.dlg.comboBox.clear()
         self.dlg.comboBox.addItems(layer_names)
         self.dlg.comboBox.setCurrentIndex(layer_names.index(iface.activeLayer().name()) if iface.activeLayer() else -1)
-        self.dlg.API_KEY.setText("9bf387a19cfa4422888191334222907")
+        self.dlg.API_KEY.setText("b30d07a0262a4be0b0984606221010")
 
         # show the dialog
         self.dlg.show()
@@ -215,7 +215,7 @@ class GetWeatherData:
         if result:
             currentLayer = list(layers.values())[self.dlg.comboBox.currentIndex()]
             #currentLayerClone = currentLayer.clone();
-            key = self.dlg.API_KEY.text(); #"9bf387a19cfa4422888191334222907"
+            key = self.dlg.API_KEY.text(); #"b30d07a0262a4be0b0984606221010"
             indx = 0;
             WEATHER_DATA = {};
             FEATURES_LENGTH = currentLayer.featureCount()
